@@ -1,0 +1,296 @@
+/* ==============start style=========== */
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #483d8b;
+  position: fixed;
+  border-bottom: 2px solid black;
+}
+
+.logo {
+  float: left;
+}
+
+.logo h1 {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 70px;
+  color: #f0f8ff;
+}
+
+nav {
+  float: right;
+}
+
+ul li {
+  display: inline-block;
+  /* margin-top: 21px; */
+  margin-right: 60px;
+}
+
+li a {
+  font-size: 25px;
+  line-height: 70px;
+  color: #f0f8ff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  transition: 2s;
+}
+
+li a:hover {
+  color: rgb(176, 196, 222);
+  border-bottom: 1px solid #b0c4de;
+}
+
+/* ==============Jumbo Tron================= */
+
+.jumbotron {
+  background-color: #7b68ee;
+  text-align: center;
+  height: 100vh;
+}
+
+.jumbotron img {
+  margin-top: 130px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 3px solid #f0f8ff;
+}
+
+.jumbotron h1 {
+  margin-top: 25px;
+  font-size: 30px;
+  color: #f0f8ff;
+}
+
+.jumbotron h1::after {
+  content: "";
+  animation: textjalan infinite 8s;
+  color: rgb(240, 248, 255, 0.7);
+  font-size: 70px;
+}
+
+@keyframes textjalan {
+  0% {
+    content: "Selamat Datang";
+  }
+
+  50% {
+    content: "Saya Ichigo Kamazuki";
+  }
+
+  100% {
+    content: "Trimakasih Sudah Datang!";
+  }
+}
+
+.jumbotron p {
+  margin-top: 25px;
+  font-size: 25px;
+  color: #f0f8ff;
+}
+
+button {
+  margin-top: 90px;
+  font-size: 25px;
+  background-color: #f0f8ff;
+  color: #483d8b;
+  border-radius: 25px;
+  /* border: none; */
+  width: 400px;
+  padding: 10px;
+  border: 3px solid rgb(72, 61, 139, 0);
+  transition: 2s;
+}
+
+button:hover {
+  background-color: #483d8b;
+  color: #f0f8ff;
+  border: 3px solid #f0f8ff;
+}
+
+/* ===============Card Pendidikan============= */
+
+.card_pendidikan {
+  height: 100vh;
+  background-color: #f0f8ff;
+}
+
+.cards h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #483d8b;
+  padding-top: 120px;
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 30%;
+  min-height: 350px;
+  border-radius: 45px;
+  /* background-color: rgb(123, 104, 238); */
+  background-color: #7b68ee;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: center;
+  border: 2px solid #00bfff;
+  transition: 1s;
+  float: left;
+}
+
+.card:hover {
+  background-color: rgb(176, 196, 222);
+  box-shadow: 5px 5px 10px 5px #483d8b;
+}
+
+span {
+  position: relative;
+}
+
+span::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #00bfff, #fffafa);
+}
+
+span::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 300px;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  background-image: linear-gradient(to left, #00bfff, #fffafa);
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #483d8b;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #fffafa;
+  /* color: #f0f8ff; */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card p {
+  color: black;
+  padding: 0px 10px;
+}
+
+/* ========Box Softskill=============== */
+
+.softskill {
+  background-color: #7b68ee;
+  height: 100vh;
+}
+
+.boxs h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: snow;
+  padding-top: 120px;
+  margin-bottom: 50px;
+}
+
+i {
+  position: relative;
+  /* max-width: max-content; */
+}
+
+i::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 270px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #00bfff, #fffafa);
+}
+
+i::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 270px;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  background-image: linear-gradient(to left, #00bfff, #fffafa);
+}
+
+.box {
+  width: 30%;
+  min-height: 400px;
+  border-radius: 10px;
+  background-color: rgb(255, 250, 250);
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: center;
+  border: 2px solid #483d8b;
+  transition: 1s;
+  float: left;
+}
+
+.box:hover {
+  /* background-color: rgb(176, 196, 222); */
+  box-shadow: 10px 10px 10px 5px #483d8b;
+}
+
+.box img {
+  width: 200px;
+  height: 200px;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  border-radius: 2px;
+}
+
+.box h2 {
+  margin-bottom: 20px;
+  color: #483d8b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.box p {
+  color: #708090;
+  padding: 0px 10px;
+}
+
+/* ==============Clear Fix============= */
+
+cf::after {
+  content: "";
+  display: table;
+  clear: both;
+}
