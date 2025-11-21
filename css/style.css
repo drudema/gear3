@@ -15,6 +15,7 @@ header {
   height: 70px;
   background-color: #483d8b;
   position: fixed;
+  z-index: 99;
   border-bottom: 2px solid black;
 }
 
@@ -108,7 +109,6 @@ button {
   background-color: #f0f8ff;
   color: #483d8b;
   border-radius: 25px;
-  /* border: none; */
   width: 400px;
   padding: 10px;
   border: 3px solid rgb(72, 61, 139, 0);
@@ -142,18 +142,19 @@ button:hover {
   width: 30%;
   min-height: 350px;
   border-radius: 45px;
-  /* background-color: rgb(123, 104, 238); */
   background-color: #7b68ee;
   margin-top: 10px;
   margin-left: 30px;
   text-align: center;
-  border: 2px solid #00bfff;
+  border: 1px solid rgba(0, 191, 255, 0);
+  box-sizing: border-box;
   transition: 1s;
   float: left;
 }
 
 .card:hover {
   background-color: rgb(176, 196, 222);
+  border: 2px solid #00bfff;
   box-shadow: 5px 5px 10px 5px #483d8b;
 }
 
@@ -224,7 +225,6 @@ span::after {
 
 i {
   position: relative;
-  /* max-width: max-content; */
 }
 
 i::before {
@@ -258,12 +258,12 @@ i::after {
   margin-left: 30px;
   text-align: center;
   border: 2px solid #483d8b;
+  box-sizing: border-box;
   transition: 1s;
   float: left;
 }
 
 .box:hover {
-  /* background-color: rgb(176, 196, 222); */
   box-shadow: 10px 10px 10px 5px #483d8b;
 }
 
@@ -285,6 +285,105 @@ i::after {
 .box p {
   color: #708090;
   padding: 0px 10px;
+}
+
+/* =================Kontak============== */
+
+.kontak {
+  height: 100vh;
+  text-align: center;
+  background-color: rgb(240, 248, 255);
+}
+
+.boxkontak h1 {
+  padding-top: 120px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #483d8b;
+  margin-bottom: 60px;
+}
+
+small {
+  position: relative;
+}
+
+small::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 325px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #00bfff, #fffafa);
+}
+
+small::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 325px;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  background-image: linear-gradient(to left, #00bfff, #fffafa);
+}
+
+.boxkontak img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 60px;
+}
+
+.boxkontak h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+}
+
+footer {
+  margin-top: 75px;
+  font-weight: bold;
+  color: #f0f8ff;
+  background-color: #483d8b;
+  padding: 20px;
+}
+
+/* ==========Media Query=================== */
+
+@media (max-width: 1000px) {
+  .card_pendidikan,
+  .jumbotron,
+  .softskill {
+    height: max-content;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+  }
+
+  .kontak {
+    height: max-content;
+  }
+
+  .card_pendidikan,
+  .softskill,
+  .kontak {
+    padding-top: 40px;
+  }
+
+  .card,
+  .box {
+    float: none;
+    width: 60%;
+    margin: 30px auto;
+  }
+
+  .boxs h1,
+  .cards h1,
+  .boxkontak h1 {
+    padding: 0;
+  }
 }
 
 /* ==============Clear Fix============= */
