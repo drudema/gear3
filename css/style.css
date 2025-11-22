@@ -453,6 +453,45 @@ footer {
   }
 }
 
+/* =======Berlaku ukuran 465px kebawah */
+
+@media (max-width: 465px) {
+  .card,
+  .box {
+    padding-bottom: 30px;
+  }
+
+  i::before {
+    content: "";
+    display: none;
+  }
+
+  i::after {
+    content: "";
+    display: none;
+  }
+
+  span::before {
+    content: "";
+    display: none;
+  }
+
+  span::after {
+    content: "";
+    display: none;
+  }
+
+  small::before {
+    content: "";
+    display: none;
+  }
+
+  small::after {
+    content: "";
+    display: none;
+  }
+}
+
 /* ==============Clear Fix============= */
 
 header::after {
