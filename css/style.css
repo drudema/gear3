@@ -197,7 +197,6 @@ span::after {
 .card h2 {
   margin-bottom: 20px;
   color: #fffafa;
-  /* color: #f0f8ff; */
   font-size: 20px;
   font-weight: bold;
 }
@@ -392,12 +391,12 @@ footer {
 /* =========Berlaku di bawah 800px======== */
 
 @media (max-width: 970px) {
-  .container {
+  body {
     width: 100%;
-    text-align: center;
   }
 
   header {
+    display: none;
     position: static;
     height: auto;
     text-align: center;
@@ -416,6 +415,10 @@ footer {
     display: block;
   }
 
+  button {
+    width: 100%;
+  }
+
   .jumbotron {
     padding-top: 50px;
     box-sizing: border-box;
@@ -426,6 +429,11 @@ footer {
     animation: textjalan infinite 8s;
     color: rgb(240, 248, 255, 0.7);
     font-size: 50px;
+  }
+
+  .card,
+  .box {
+    width: 100%;
   }
 
   .card h2 {
@@ -442,10 +450,6 @@ footer {
 
   .box p {
     font-size: 20px;
-  }
-
-  .kontak {
-    height: 100vh;
   }
 }
 
